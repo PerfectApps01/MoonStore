@@ -1,11 +1,14 @@
 import React from 'react';
-import { Header, Logo, Cart } from './Navbar.styles';
+import { Header, Logo, CartWrapper, CartIcon, CartCount } from './Navbar.styles';
 
 export default function Navbar({ cartCount }) {
     return (
         <Header>
             <Logo>MoonStore 🌙</Logo>
-            <Cart>Cart ({cartCount})</Cart>
+            <CartWrapper>
+                <CartIcon>🛒</CartIcon>
+                <CartCount>{cartCount}</CartCount>
+            </CartWrapper>
         </Header>
     );
 }
